@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Perros</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+
+	<style>
+		
+		.margen
+		{
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		.degradado
+	  	{
+	  		background: linear-gradient(to right, white, rgb(0, 139, 139));
+	  	}
+
+	</style>
+
+
+
+
+</head>
+
+<body class="degradado">
+<nav class="container-fluid navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+		<div class="container">
+			<a href="Admin.html" class="navbar-brand">Volver a la Página de Administrador</a>
+
+				</ul>
+			</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="row seccion py-5" id="pe">
+			<div class="col-12 columna">
+				<h2></h2>
+				<p><div class="container">
+		<div class="col-8 columna margen">
+			<div class="col">
+				<form action="registrar_perros.php" method="post">
+
+
+						<div class="form-group">
+						<label for=""> <b>Color</b></label>
+						<input type="text" class="form-control" placeholder="Color del Perro..." name="color" pattern="[A-Za-z0-9]{1,20}" id="pe" required>
+					</div>
+					<div class="form-group">
+						<label for=""><b>Tamaño</b></label>
+						<input type="text" class="form-control" placeholder="Tamaño del Perro...(Mini, Pequeño, Normal, Grande" name="tamano" pattern="[A-Za-z0-9 ]{1,20}" id="pe" required>
+					</div>
+					<div class="form-group">
+						<label for=""><b>Condición del Perro</b></label>
+						<input type="text" class="form-control" placeholder="Dejar en --Mal-- preferiblemente..." name="condicion" pattern="[A-Za-z0-9]{1,20}" id="pe" required>
+					</div>
+					
+					<div class="form-group">
+						<label for=""><b>Raza</b></label>
+						<input type="text" class="form-control" placeholder="Raza del Perro, dejar en blanco si se desconoce..." name="raza" pattern="[A-Za-z0-9 ]{1,20}" id="pe">
+					</div>
+
+
+	<div class="form-group">
+	<label for=""><b> ID del Empleado que rescató al perro:</b></label>
+	<input type="text" class="form-control" placeholder="Rescatado por..." name="rescate" pattern="[A-Za-z0-9 ]{1,20}">
+	</div>
+
+	<div class="form-group">
+	<label for=""><b>ID de Adopción</b></label>
+	<input type="text" class="form-control" placeholder="ID de Adopción..." name="adopcion" pattern="[0-9 ]{1,20}">
+
+
+					<div class="py-3">
+						<input type="submit" class="btn btn-primary btn-block" value="Guardar">
+					</div>
+
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+			</div>
+		</div>
+					</div>
+
+					</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

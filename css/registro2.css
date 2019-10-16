@@ -1,0 +1,105 @@
+* {
+	box-sizing: border-box;
+  }
+
+  body
+  {
+  	margin: 0;
+  	font-family: sans-serif;
+  	/*IMAGEN/COLOR DE FONDO FORM*/
+  	/*background: #204862;*/
+  }
+
+
+  .form-register
+  {
+  	width: 95%;
+  	/*ANCHO MÁXIMO*/
+  	max-width: 500px;
+  	margin: auto;
+  	background: white;
+  	/*BORDES REDONDEADOS*/
+  	border-radius: 7px;
+  }
+
+  .form__titulo
+  {
+  	/*ENCABEZADO DEL FORMULARIO*/
+  	background: deepskyblue;
+  	color: #fff;
+  	padding: 20px;
+  	text-align: center;
+  	font-weight: 100;
+  	font-size: 30px;
+  	/*REDONDEA SOLO LA ESQUINA IZQUIERDA SUPERIOR*/
+  	border-top-left-radius: 7px; 
+  	/*REDONDEA SOLO LA ESQUINA DERECHA SUPERIOR*/
+  	border-top-right-radius: 7px; 
+
+  	border-bottom: 5px solid crimson;
+  }
+
+  .contenedor-inputs
+  {
+  	/*10 PIXELES ARRIBA Y ABAJO. 30 PIXELES HACIA LOS LADOS*/
+  	padding: 10px 30px;
+  	display: flex;
+  	/*CONTENIDO QUE NO ENTRE, SE VAYA HACIA ABAJO*/
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+  }
+
+  input
+  {
+  	margin-bottom: 15px;
+  	padding: 15px;
+  	font-size: 16px;
+  	border-radius: 3px;
+  	border: 1px solid darkgray;
+  }
+
+  .input-48
+  {
+  	width: 48%;
+  }
+
+  .input-70
+  {
+    width: 70%;
+  }
+
+ .input-100
+ {
+ 	width: 100%;
+ }
+
+ .btn-enviar
+ {
+ 	/*COLOR DEL BOTÓN*/
+ 	background: crimson;
+ 	color:#fff;
+ 	margin: auto;
+ 	padding: 10px 40px;
+ 	cursor: pointer;
+ 	font-size: 20px;
+ }
+
+ .btn-enviar:active
+ {
+ 	/*Escala el botón (Al hacer clic se agranda)*/
+ 	transform: scale(1.05);
+ }
+
+ .form__link
+ {
+ 	width: 100%;
+ 	margin: 7px;
+ 	text-align: center;
+ 	font-size: 14px;
+
+ }
+
+ .navac
+ {
+  padding-top: 100px;
+ }

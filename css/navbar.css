@@ -1,0 +1,218 @@
+body
+{
+	margin: 0;
+	font-family: sans-serif;
+}
+
+header
+{
+	width: 105%;
+	background: rgba(0,191,255,0.8);
+}
+
+
+
+#btn-menu
+{
+	display: none;
+}
+
+header label
+{
+	display: none;
+	width: 40px;
+	height: 50px;
+	padding: 10px;
+	border-right: 1px solid #fff;
+}
+
+header label:hover
+{
+	cursor: pointer;
+	background: rgba(0,0,0,0.2);
+}
+
+.menu ul
+{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+.menu li
+{
+	border-right: 1px solid #DC143C;
+	/*border-top: 1px solid #94BDFF;*/
+}
+
+.menu li:hover
+{
+	background: rgba(248,194,255,0.3);
+}
+
+.menu li a
+{
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
+}
+
+main
+{
+	padding: 20px;
+}
+
+.image
+{
+	position: absolute;
+ 	padding: 10px; 
+ 	margin: auto; 
+ 	left: 910px;
+ 	width: 350px;
+ 	max-width: 35%;
+}
+
+.contenedores_nav
+{
+	display: flex
+}
+
+.columna_nav
+{
+	background: rgba(229,26,76,0.4);
+	color:#F8F3D4;
+	position: absolute;
+    padding: 10px;
+    max-width: 150%;
+    width: 70%;
+    justify-content;
+    font-size: 15.5px;
+    border-radius: 10px;
+}
+
+	/*ESTILOS DEL ARTICULO*/
+	section
+	{
+	position:absolute;
+	margin:auto;
+	width:0px;
+	height:0px;
+	}
+
+	article
+	{
+	position:absolute;
+	left:135px;
+	top:30px;
+	width:600px;
+	height:453px;
+	}
+
+	article h1
+	{
+	font-family: 'Kaushan Script', cursive;
+	font-size:40px;
+	margin:20px;
+	}
+
+	article p img
+	{
+		float:left;
+		margin-right: 10px;
+	}
+
+	article p
+	{
+	margin:5px 20px;
+	font-size:14px;
+	text-align:justify;
+	}
+
+
+	#logo
+	{
+		position: relative;
+		padding-top: 50px;
+		left: 10px;
+		margin:0;
+	}
+
+
+
+  	.btn-enviar
+ 	{
+ 	/*COLOR DEL BOTÓN*/
+ 	background: crimson;
+ 	color:#fff;
+ 	margin: auto;
+ 	padding: 10px 40px;
+ 	cursor: pointer;
+ 	font-size: 20px;
+ 	}
+
+ .btn-enviar:active
+ {
+ 	/*Escala el botón (Al hacer clic se agranda)*/
+ 	transform: scale(1.05);
+ }
+
+
+
+@media (max-width:768px)
+{
+	header label
+	{
+		display: block;
+	}
+
+	.menu
+	{
+		position: absolute;
+		background: rgba(0,191,255,0.8);
+		width:45%;
+		margin-left: -70%;
+		transition: all 1s;
+	}
+	.menu ul
+	{
+		flex-direction: column;
+	}
+
+	.menu li
+	{
+		border-top:1px solid #fff;
+	}
+	#btn-menu:checked ~ .menu
+	{
+		margin: 0;
+	}
+
+}
+	
+
+
+
+footer
+{
+
+/*
+	position: relative;
+	font-size: 20px;
+	top: 500px;
+	padding: 15px;
+	margin: 25px auto;
+	width: 50%;
+	max-width: 85%;
+	height: 25px;
+	background: rgba(0,191,255,0.5); 
+	text-align: center;
+	line-height: 25px;
+	color:white;*/
+}
+
+
+
+
+

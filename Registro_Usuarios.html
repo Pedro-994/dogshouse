@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang=es>
+	<head>
+		<link rel="icon" href="img/Doge.ico">
+		<title>Registrarse </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="css/registro2.css">
+
+
+	  <style>
+	  	.fondo
+	  	{
+	  		background: url('img/P1.jpg');
+	  		height: 100vh;
+	  		background-position: center;
+	  		background-size: cover;
+	  	}
+
+	  	.navcolor
+	  	{
+	  		background: rgb(156,156,156);
+	  	}
+
+	  	.seccion1
+	  	{
+	  		background: rgba(50,108,201,1);
+	  	}	
+
+	  	.bg
+	  	{
+	  		/*background: rgb(255,255,191);*/
+	  		background: rgb(159,213,209);
+	  	}
+
+
+	  	.text1
+	  	{
+	  		color: white;
+	  		background: rgba(0,0,0,0.3);
+	  	}
+
+	  	.textlink
+	  	{
+	  		color:white;
+	  	}
+	  </style> 
+
+
+
+	</head>
+	<body background="img/2.jpg" >
+
+		<!-- NAVBAR -->
+
+
+<div class="container-fluid navbar-inverse  bg-dark fixed-top">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+		  <img src="img/DogsHouse.png" width="103px">
+		  <a class="navbar-brand" href="Index.html">Dog's House</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="Index.html"> <i class="fa fa-home fa-lg" style="padding-right: 13px;"></i>Inicio</a>
+		      </li> 
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"></a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+		        	<i class="fa fa-address-card fa-lg" style="padding-right: 13px; color: white"></i>
+		          Iniciar Sesión
+		        </a>
+		        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="Login.html">
+		          	<i class="fa fa-users fa-lg" style="padding-right: 13px; color: black"></i>
+		          	Iniciar Sesión / Registrarse</a>
+		         
+		        </div>
+		      </li>
+
+
+		    <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			        	<i class="fa fa-question fa-lg" style="padding-right: 13px; color: white"></i>
+			          	Información / Servicios
+			        </a>
+			        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+			          <a class="dropdown-item topbar-widget-mymarketplace" href="https://goo.gl/maps/yD5Ba9S5DCTie3Yo9">
+			          	<i class="fa fa-compass fa-lg" style="padding-right: 13px; color: black"></i>
+			      		¿Dónde nos ubicamos?</a>
+			      		
+			          <!-- <a class="dropdown-item topbar-widget-mymarketplace" href="#"> -->
+			          	<!-- <i class="fa fa-calendar fa-lg" style="padding-right: 13px; color: black"></i> -->
+						<!-- Disponibilidad de Horarios</a> -->
+
+			          <!-- <div class="dropdown-divider"></div> -->
+					  <!-- <a class="dropdown-item topbar-widget-mymarketplace" href="#">Catálogo de Adopciones</a> -->
+			          <div class="dropdown-divider"></div>
+			          <a class="dropdown-item topbar-widget-mymarketplace" href="Donaciones.html">
+						<i class="fa fa-dollar fa-lg" style="padding-right: 13px; color: black"></i>
+			          	¡Deseo apoyar con una donación!</a>
+			          <a class="dropdown-item topbar-widget-mymarketplace" href="Adopcion.html">
+						<i class="fa fa-paw fa-lg" style="padding-right: 8px; color: black"></i>
+						Deseo poner a mi perro en adopción</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item topbar-widget-mymarketplace" href="Index.html">
+					¡Deseo adoptar a un perrito!
+					<i class="fa fa-arrow-right" style="padding-left: 15px; color: black"></i>
+					</a>
+
+
+		        </div>
+		    </li>
+
+
+		      <li class="naav-item">
+		        <a class="nav-link" href="#!"></a>
+		      </li>
+		    </ul>
+		    	
+		  </div>
+		</nav>
+	</div>
+
+
+		<!-- -->
+
+		<!-- Comienza formulario -->
+		<div class="navac">
+	<form action="registrar_usuarios.php" method="post" class="form-register">
+		<h2 class="form__titulo">CREA UNA CUENTA</h2>
+
+		<p class="form__link">Introduzca sus datos personales. Esta información será recabada sólo para fines
+		de su registro y no será pública para nadie más.</p>
+		<p class="form__link">¡Sus datos están protegidos!</p>
+		<!-- Comienza el divisor que contiene los label del formulario -->
+		<div class="contenedor-inputs">
+			<input type="text" name="nombre"  pattern="[A-Za-z0-9]{1,20}"placeholder="Nombre" class="input-48" required>
+
+			<input type="text" name="apellido_p" pattern="[A-Za-z0-9]{1,20}" placeholder="Apellido Paterno" class="input-70" required>
+
+			<input type="text" name="apellido_m" pattern="[A-Za-z0-9]{1,20}" placeholder="Apellido Materno" class="input-70" required>
+
+			<!-- GENERO -->
+
+			<div class="form-group">
+						<label><b>Género del Empleado</b></label>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="radio" name="sexo" id="hombre" value="Hombre" class="form-check-input mr-2">Hombre
+						</label>
+					</div>
+					<div class="form-check">
+						<label class="form-check-label">
+							<input type="radio" name="sexo" id="mujer" value="Mujer" class="form-check-input mr-2">Mujer
+						</label>
+					</div>
+					</div>
+			<!--  -->
+
+
+
+			<input type="email" name="correo" pattern="[A-Za-z0-9_-@]{1,30}" placeholder="Correo Eletrónico" class="input-100" required>
+
+			<input type="text" name="alias" pattern="[A-Za-z0-9]{1,20}" placeholder="Nombre de Usuario" class="input-48" required>
+
+			<input type="password" name="clave" pattern="[A-Za-z0-9]{1,20}" placeholder="Contraseña" class="input-48" required>
+
+			<input type="text" name="telefono" pattern="[A-Za-z0-9]{1,20}" placeholder="Teléfono" class="input-100" required>
+
+			<input type="text" name="calle" pattern="[A-Za-z0-9]{1,20}" placeholder="Dirección de Calle" class="input-48" required>
+
+			<input type="text" name="nocalle" pattern="[A-Za-z0-9 ]{1,20}" placeholder="Número Calle" class="input-48" required>
+
+			<input type="text" name="colonia" pattern="[A-Za-z0-9 ]{1,20}" placeholder="Colonia" class="input-100" required>
+
+			<input type="text" name="municipio" pattern="[A-Za-z0-9 ]{1,20}" placeholder="Municipio" class="input-48" required>
+
+			<input type="text" name="cp" pattern="[A-Za-z0-9 ]{1,20}" placeholder="Código Postal" class="input-48" required>
+
+
+			<input type="submit" value="Registrar" pattern="[A-Za-z0-9]{1,20}" class="btn-enviar">
+
+
+
+			
+
+			<!-- Link para redireccionar al formulario de inicio de sesión -->
+			<p class="form__link">¿Ya tienes una cuenta? <a href="Index.html">Ingresa aquí</a></p>
+
+		</div>
+		</div>
+		<!-- Termina formulario -->
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script type='text/javascript'>
+	document.oncontextmenu = function(){return false}
+</script>
+	</body>
+</html>

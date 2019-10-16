@@ -1,0 +1,35 @@
+.fondo
+	  	{
+	  		background: url('img/P1.jpg');
+	  		height: 100vh;
+	  		background-position: center;
+	  		background-size: cover;
+	  	}
+
+	  	.navcolor
+	  	{
+	  		background: rgb(156,156,156);
+	  	}
+
+	  	.seccion1
+	  	{
+	  		background: rgba(50,108,201,1);
+	  	}	
+
+	  	.bg
+	  	{
+	  		/*background: rgb(255,255,191);*/
+	  		background: rgb(159,213,209);
+	  	}
+
+
+	  	.text1
+	  	{
+	  		color: white;
+	  		background: rgba(0,0,0,0.3);
+	  	}
+
+	  	.textlink
+	  	{
+	  		color:white;
+	  	}

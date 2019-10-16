@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang=es>
+	<head>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150213475-1"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  gtag('config', 'UA-150213475-1');
+</script>
+ 
+	<link rel="icon" href="img/Doge.ico">
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Iniciar Sesión</title>
+
+	  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="css/login2.css">
+	  	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	</head>
+	<body background="img/2.jpg">
+		
+
+		<div>
+	<form action="log.php" method="post" class="form-loger" id="formlg">
+		<h2 class="form__titulo">INICIAR SESIÓN</h2>
+
+		<p class="form__link"> Por favor, introduzca el correo y contraseña <br>
+		que ingresó al momento de su registro</p>
+
+		<div class="contenedor-inputs">  
+			<input type="email" name="correo" pattern="[A-Za-z0-9_-@]{1,20}" placeholder="Correo" class="input-100" required>		
+
+			<input type="password" name="clave" pattern="[A-Za-z0-9_-]{1,20}" placeholder="Contraseña" class="input-100" required>
+
+			<input type="submit" value="Iniciar Sesión" class="btn-enviar"> 
+
+			<p class="form__link">¿Aún no tienes una cuenta? <a href="Registro_Usuarios.html"> Registrate aquí</a></p>
+		</div>
+		</div>
+
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<!-- <script src="js/main.js"></script> -->
+
+	</body>
+</html>

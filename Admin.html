@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" href="img/Doge.ico">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Administracion</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+	<style>
+		
+
+		.fondo
+	  	{
+	  		background: url('img/Admin.jpg');
+	  		height: 100vh;
+	  		background-position: center;
+	  		background-size: cover;
+	  	}
+
+	</style>
+
+
+</head>
+
+<body>
+	<nav class="container-fluid navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+		<div class="container">
+			<a href="Admin.html" class="navbar-brand">Administrador</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-itema active">
+				<li class="nav-item">
+		        <a class="nav-link" href="#"></a>
+		      	</li>
+		      	
+
+
+
+<!-- DROPDOWN -->
+
+		      	<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+		        	<i class=""></i>
+		          Insertar Registros
+		        </a>
+		        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+		          <a class="dropdown-item" href="Empleados.html">
+		          	<i class="fa fa-user-plus"style="padding-right: 6px; color: steelblue"></i>
+		          	Empleados</a>
+
+		          <a class="dropdown-item" href="Perros.html"> 
+				  <i class="fa fa-paw fa-lg" style="padding-right: 6px; color: steelblue"></i>
+		      		Perros</a>
+
+
+
+
+		    <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+		          Modificar Registros
+
+		        </a>
+		        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+		      		<a class="dropdown-item" href="Mod/index.php"> 
+					<i class="fa fa-cogs"style="padding-right: 6px; color: steelblue"></i>
+		      		Administradores</a>
+
+		      		<a class="dropdown-item" href="Mod/index-empleado.php"> 
+					<i class="fa fa-cogs"style="padding-right: 6px; color: steelblue"></i>
+		      		Empleados</a>
+
+		      		<a class="dropdown-item" href="Mod/index-perros.php"> 
+					<i class="fa fa-cogs"style="padding-right: 6px; color: steelblue"></i>
+		      		Perros</a>
+		        </div>
+		    </li>
+
+
+		    <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+		        	<i class="" style="padding-right: 13px; color: white"></i>
+		          Altas/Bajas Lógicas
+		        </a>
+		        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+		          <a class="dropdown-item" data-toggle="modal" data-target="#Activar-Empleado" data-whatever="@mdo">
+		          	<i class="fa fa-user" style="padding-right: 5px; color: deepskyblue"></i>
+		          	Activar Empleado</a>
+
+		          <a class="dropdown-item" data-toggle="modal" data-target="#Desactivar-Empleado" data-whatever="@mdo">
+		          	<i class="fa fa-user-times" style="padding-right: 8px; color: red"></i>
+		          	Desactivar Empleado</a>
+
+					<div class="dropdown-divider"></div>
+
+
+
+		          <a class="dropdown-item" data-toggle="modal" data-target="#Activar-Usuario" data-whatever="@mdo">
+		          	<i class="fa fa-user" style="padding-right: 13px; color: deepskyblue"></i>
+		          	Activar Usuario</a>
+
+		          <a class="dropdown-item" data-toggle="modal" data-target="#Desactivar-Usuario" data-whatever="@mdo">
+		          	<i class="fa fa-user-times" style="padding-right: 13px; color: red"></i>
+		          	Desactivar Usuario </a>
+
+		        </div>
+		    </li>
+<!--
+		    	<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+
+		        	<i class="" style="padding-right: 13px; color: white"></i>
+		          Consultar Registros
+		        </a>
+		        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+		        	<a class="dropdown-item" href="">
+		          	<i class="" style="padding-right: 13px; color: black"></i>
+		          	Usuarios Registrados</a>
+
+		          <a class="dropdown-item" href="">
+		          	<i class="" style="padding-right: 13px; color: black"></i>
+		          	Empleados Registrados</a>
+
+		          <a class="dropdown-item" href=""> 
+		          	<i class="" style="padding-right: 13px; color: black"></i>
+		      		Perros en Rehabilitación</a>
+
+		      		<a class="dropdown-item" href=""> 
+		          	<i class="" style="padding-right: 13px; color: black"></i>
+		      		Perros Disponibles para Adopción</a>
+-->
+<!-- MODAL -->
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#" data-toggle="modal" data-target="#Respaldo/Import" data-whatever="@mdo">  Respaldar / Importar</a>
+		      </li> 
+
+		        </div>
+		    </li>
+
+<!-- /MODAL -->
+
+				</ul>
+			</ul>
+			</div>
+		</div>
+	</nav>
+
+
+<!-- MODAL RESPALDO / IMPORT DE BASE DE DATOS -->
+
+<div class="modal fade" id="Respaldo/Import" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel"><b><center>RESTAURACIÓN / RESPALDO DE BASE DE DATOS</center></b></h5>
+				        <form action="ggg/php/index.php" >
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+
+				      <div class="modal-body">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					        <button type="submit" class="btn btn-primary">
+					        	Realizar Backup</button>
+
+
+				        </div>
+				        </form>
+
+					      <div class="modal-footer">
+					        <!-- PIE -->
+					      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+<!--  -->
+
+<!-- MODAL ACTUALIZAR USUARIOS -->
+
+<div class="modal fade" id="Modificar-Users" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel"><b>ACTUALIZACIÓN DE DATOS DE USUARIOS</b></h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+
+				      <div class="modal-body">
+				        <form action="modificar_usuarios.php">
+
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">ID del Usuario a Modificar</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="ID Usuario..." name="id_us">
+				          </div>
+
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Nombre del Usuario</label>
+				            <input type="text" class="form-control col-7" id="recipient-name" placeholder="Nombre nuevo a modificar" name="nombre_us">
+				          </div>
+
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Apellido Paterno</label>
+				            <input type="text" class="form-control col-7" id="recipient-name" placeholder="Apellido Paterno nuevo a modificar" name="app_us">
+				          </div>
+
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Apellido Materno</label>
+				            <input type="text" class="form-control col-7" id="recipient-name" placeholder="Apellido Materno a modificar" name="apm_us">
+				          </div>
+
+				        
+				        </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					        <input type="submit" class="btn btn-primary" value="Modificar">
+					        </form>
+					      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+		<!--  -->
+
+<!-- MODAL MODIFICAR EMPLEADOS -->
+
+<div class="modal fade" id="Modificar-Emps" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel"><b>ACTUALIZACIÓN DE DATOS DE EMPLEADO</b></h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+
+				      <div class="modal-body">
+				        <form action="">
+
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Nombre del Empleado</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Nombre del Empleado">
+				          </div>
+
+				          <div class="form-group">
+				            <label for="message-text" class="col-form-label">Información:</label>
+
+				          </div>
+				        </form>
+				        </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-primary">Actualizar Datos</button>
+					      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+<!-- MODAL ACTUALIZAR PERROS -->
+
+
+<div class="modal fade" id="Modificar-Perros" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel"><b>ACTUALIZACIÓN DE DATOS DE PERROS</b></h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+
+				      <div class="modal-body">
+				        <form action="">
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">ID del Perro a modificar</label>
+				            <input type="text" class="form-control col-5" id="recipient-name" placeholder=" Busqueda por ID...">
+				          </div>
+				          
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Color del Perro</label>
+				            <input type="text" class="form-control col-5" id="recipient-name" placeholder=" Cambiar color...">
+				          </div>
+
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Tamaño del Perro</label>
+				            <input type="text" class="form-control col-5" id="recipient-name" placeholder=" Cambiar Tamaño...">
+				          </div>
+
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Raza del Perro</label>
+				            <input type="text" class="form-control col-5" id="recipient-name" placeholder=" Cambiar Raza...">
+				          </div>
+
+						  <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">ID del Empleado que lo rescató</label>
+				            <input type="text" class="form-control col-5" id="recipient-name" placeholder=" Cambiar ID Empleado...">
+				          </div>
+
+				        </form>
+				        </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-primary">Actualizar Datos</button>
+					      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ACTIVAR EMPLEADOS -->
+
+
+		<div class="modal fade" id="Activar-Empleado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel"><b>ACTIVACIÓN DE EMPLEADOS</b></h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+
+				      <div class="modal-body">
+				        <form action="activar_empleado.php" method="post">
+
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Nombre del Empleado</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Nombre..." name="nom_emp" required pattern="[A-Za-z]{1,20}">
+				          </div>
+
+					   <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Apellido Paterno del Empleado</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Apellido Paterno" name="app_emp" pattern="[A-Za-z]{1,20}" required>
+				          </div>
+				        
+					   <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Apellido Materno del Empleado</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Apellido Materno" name="apm_emp" pattern="[A-Za-z]{1,20}" required>
+				          </div>
+
+				        
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					        <button type="submit" class="btn btn-primary"><b>ACTIVAR</b></button>
+					      </div>
+					  </form>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- DESACTIVAR EMPLEADO -->
+
+
+		<div class="modal fade" id="Desactivar-Empleado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel"><b>DESACTIVAR EMPLEADOS</b></h5>
+
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+
+				      <div class="modal-body">
+				        <form action="desactivar_empleado.php" method="post">
+
+
+					  <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Nombre del Empleado</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Nombre..." name="nom_emp" pattern="[A-Za-z]{1,20}" required>
+				          </div>
+
+					   <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Apellido Paterno del Empleado</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Apellido Paterno" name="app_emp" pattern="[A-Za-z]{1,20}" required>
+				          </div>
+				        
+					   <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Apellido Materno del Empleado</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Apellido Materno" name="apm_emp" pattern="[A-Za-z]{1,20}" required>
+				          </div>
+
+				        
+				        </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					        <button type="submit" class="btn btn-primary"><b>DESACTIVAR</b></button>
+					      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+</form>
+
+<!--  -->
+
+
+
+
+<!-- MODIFICAR PERROS ADOPTIVOS -->
+
+
+<div class="modal fade" id="Activar-Empleado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel"><b>Activar Estado de Empleados</b></h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+
+				      <div class="modal-body">
+				        <form action="">
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">ID de Adopción</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Búsqueda por ID">
+				          </div>
+				          <div class="form-group">
+				            <label for="message-text" class="col-form-label">Información:</label>
+				            <textarea class="form-control" id="message-text" placeholder="Por favor, ingrese una breve descripción de porqué desea adoptar a este perrito, nos pondremos en contacto con usted a través de su correo electrónico."></textarea>
+				          </div>
+
+				        </form>
+				        </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-primary">Actualizar Datos</button>
+					      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+
+
+<!--  -->
+
+
+<!-- ACTIVAR USUARIOS -->
+
+		<div class="modal fade" id="Activar-Usuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel"><b>ACTIVAR USUARIOS</b></h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+
+				      <div class="modal-body">
+				        <form action="activar_usuario.php" method="post">
+
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Nombre del Usuario</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Activar Usuario..." name="nom_us" pattern="[A-Za-z]{1,20}" required>
+				          </div>
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Apellido Paterno del Usuario</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Activar Usuario..." name="app_us" pattern="[A-Za-z]{1,20}" required>
+				          </div>
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Apellido Materno del Usuario</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Activar Usuario..." name="apm_us" pattern="[A-Za-z]{1,20}" required>
+				          </div>
+				        
+				        </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					        <button type="submit" class="btn btn-primary"><b>ACTIVAR</b></button>
+					      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+</form>
+<!--  -->
+
+
+<!-- DESACTIVAR USUARIOS -->
+
+<div class="modal fade" id="Desactivar-Usuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel"><b>DESACTIVAR USUARIOS</b></h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+
+				      <div class="modal-body">
+				        <form action="desactivar_usuario.php" method="post">
+
+				          <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Nombre del Usuario</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Nombre..." name="nom_us" pattern="[A-Za-z]{1,20}" required>
+				          </div>
+
+					   <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Apellido Paterno del Usuario</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Apellido Paterno" name="app_us" pattern="[A-Za-z]{1,20}" required>
+				          </div>
+				        
+					   <div class="form-group">
+				            <label for="recipient-name" class="col-form-label">Apellido Materno del Usuario</label>
+				            <input type="text" class="form-control col-4" id="recipient-name" placeholder="Apellido Materno" name="apm_us" pattern="[A-Za-z]{1,20}" required>
+				          </div>
+
+				        
+				        </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					        <button type="submit" class="btn btn-primary"><b>DESACTIVAR</b></button>
+					      </div>
+				    </div>
+				</div>
+			</div>
+		</div>
+</form>
+
+
+
+
+
+<div class="container-fluid fondo">
+		<div class="container d-flex flex-column justify-content-center h-100 text-white align-items-center text-justify">
+			<h1>Bienvenidos a la vista de Administrador de Dog's House <br> </h1>
+			<p class="text1">Si llegaste aquí por error, por favor, ignora esta sección y regresa con tus actividades diarias :3</p>
+			<p class="text1"><b>SÓLO USUARIOS AUTORIZADOS, CUALQUIER ALTERACIÓN NO LEGAL DEL CONTENIDO SERÁ CASTIGADO COMO LA LEY LO SEÑALE</b></p>
+			<div>
+				<!-- <a href="#!" class="btn btn-danger">Leer más</a> -->
+			</div>
+		</div>
+	</div>
+
+	</body>
+
+<script type='text/javascript'>
+	document.oncontextmenu = function(){return false}
+</script>
+
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+<script>
+window.onload=function()
+{
+	alert('Bienvenido, por favor, proceda con precaución...');
+}
+</script>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

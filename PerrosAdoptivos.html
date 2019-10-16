@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Perros</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+
+	<style>
+		
+		.margen
+		{
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		.degradado
+	  	{
+	  		background: linear-gradient(to right, white, rgb(0, 139, 139));
+	  	}
+
+	</style>
+
+
+
+
+</head>
+
+<body class="degradado">
+<nav class="container-fluid navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+		<div class="container">
+			<a href="#" class="navbar-brand"><b>NUEVO PERRO ADOPTIVO</b></a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Menu de Navegacion">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-itema active">
+				<li class="nav-item">
+		        <a class="nav-link" href="#"></a>
+		      	</li>
+		      	
+
+
+
+<!-- DROPDOWN -->
+
+		      	<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+		        	<i class="" style="padding-right: 13px; color: white"></i>
+		          Insertar Registros
+		        </a>
+		        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+		          <a class="dropdown-item" href="Empleados.html">
+		          	<i class="" style="padding-right: 13px; color: black"></i>
+		          	Empleados</a>
+
+		          <a class="dropdown-item" href="Perros.html"> 
+		          	<i class="" style="padding-right: 13px; color: black"></i>
+		      		Perros</a>
+
+		      		<a class="dropdown-item" href="PerrosAdoptivos.html"> 
+		          	<i class="" style="padding-right: 13px; color: black"></i>
+		      		Perros Adoptivos</a>
+		        </div>
+		    </li>
+
+
+
+		    <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+		        	<i class="" style="padding-right: 13px; color: white"></i>
+		          Modificar Registros
+		        </a>
+		        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+		          <a class="dropdown-item" href="">
+		          	<i class="" style="padding-right: 13px; color: black"></i>
+		          	Empleados</a>
+
+		          <a class="dropdown-item" href=""> 
+		          	<i class="" style="padding-right: 13px; color: black"></i>
+		      		Perros</a>
+
+		      		<a class="dropdown-item" href=""> 
+		          	<i class="" style="padding-right: 13px; color: black"></i>
+		      		Perros Adoptivos</a>
+		        </div>
+		    </li>
+
+
+		    <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+		        	<i class="" style="padding-right: 13px; color: white"></i>
+		          Eliminar Registros
+		        </a>
+		        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+
+		          <a class="dropdown-item" href="">
+		          	<i class="" style="padding-right: 13px; color: black"></i>
+		          	Empleados</a>
+
+		          <a class="dropdown-item" href=""> 
+		          	<i class="" style="padding-right: 13px; color: black"></i>
+		      		Perros</a>
+
+		      		<a class="dropdown-item" href=""> 
+		          	<i class="" style="padding-right: 13px; color: black"></i>
+		      		Perros Adoptivos</a>
+		        </div>
+		    </li>
+<!--  -->
+
+				</ul>
+			</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="row seccion py-5" id="pe">
+			<div class="col-12 columna">
+				<h2></h2>
+				<p><div class="container">
+		<div class="col-8 columna margen">
+			<div class="col">
+				<form action="registrar_perros.php" method="post">
+
+
+						<div class="form-group">
+						<label for="">Color</label>
+						<input type="text" class="form-control" placeholder="Color del Perro..." name="color" pattern="[A-Za-z0-9]{1,20}" id="pe" required>
+					</div>
+					<div class="form-group">
+						<label for="">Tamaño</label>
+						<input type="text" class="form-control" placeholder="Tamaño del Perro...(Mini, Pequeño, Normal, Grande" name="tamano" pattern="[A-Za-z0-9 ]{1,20}" id="pe" required>
+					</div>
+					<div class="form-group">
+						<label for="">Condición del Perro</label>
+						<input type="text" class="form-control" placeholder="Dejar en --Mal-- preferiblemente..." name="condicion" pattern="[A-Za-z0-9]{1,20}" id="pe" required>
+					</div>
+					
+					<div class="form-group">
+						<label for="">Raza</label>
+						<input type="text" class="form-control" placeholder="Raza del Perro, dejar en blanco si se desconoce..." name="raza" pattern="[A-Za-z0-9 ]{1,20}" id="pe">
+					</div>
+
+
+	<div class="form-group">
+	<label for="">Empleado que rescató al perro:</label>
+	<input type="text" class="form-control" placeholder="Rescatado por..." name="rescate" pattern="[A-Za-z0-9 ]{1,20}">
+	</div>
+
+	<div class="form-group">
+	<label for="">ID de Adopción</label>
+	<input type="text" class="form-control" placeholder="ID de Adopción..." name="adopcion" pattern="[A-Za-z0-9 ]{1,20}">
+
+
+					<div class="py-3">
+						<input type="submit" class="btn btn-primary btn-block" value="Guardar">
+					</div>
+
+
+
+				</form>
+			</div>
+		</div>
+	</div>
+			</div>
+		</div>
+					</div>
+
+					</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
